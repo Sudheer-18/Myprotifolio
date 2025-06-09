@@ -49,7 +49,6 @@ const Skills: React.FC = () => {
         { name: 'Node.js', icon: Server },
         { name: 'Express.js', icon: Server },
         { name: 'REST APIs', icon: Zap },
-        { name: 'GraphQL', icon: Zap },
         { name: 'JWT', icon: Settings },
         { name: 'OAuth', icon: Settings }
       ],
@@ -60,11 +59,9 @@ const Skills: React.FC = () => {
       icon: Database,
       skills: [
         { name: 'MongoDB', icon: Database },
+        { name: 'NoSQL', icon: Database },
         { name: 'MySQL', icon: Database },
-        { name: 'PostgreSQL', icon: Database },
         { name: 'Firebase', icon: Cloud },
-        { name: 'Redis', icon: Database },
-        { name: 'SQLite', icon: Database }
       ],
       gradient: 'from-orange-500 to-red-600'
     },
@@ -73,8 +70,7 @@ const Skills: React.FC = () => {
       icon: Settings,
       skills: [
         { name: 'Git', icon: Settings },
-        { name: 'Docker', icon: Settings },
-        { name: 'AWS', icon: Cloud },
+        { name: 'GitHub', icon: Settings },
         { name: 'Vercel', icon: Cloud },
         { name: 'Postman', icon: Settings },
         { name: 'VS Code', icon: FileCode }
@@ -89,7 +85,6 @@ const Skills: React.FC = () => {
         { name: 'Unix', icon: Terminal },
         { name: 'Windows', icon: Monitor },
         { name: 'Ubuntu', icon: Terminal },
-        { name: 'CentOS', icon: Terminal },
         { name: 'macOS', icon: Monitor }
       ],
       gradient: 'from-teal-500 to-cyan-600'

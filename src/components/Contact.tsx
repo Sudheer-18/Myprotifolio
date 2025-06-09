@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Aditya College of Engineering',
+      value: 'Mallam, kakinada district',
       href: '#',
       color: 'from-purple-500 to-indigo-600'
     }
