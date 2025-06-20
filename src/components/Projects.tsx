@@ -1,38 +1,72 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, ShoppingCart, Droplets, Brain } from 'lucide-react';
+import {
+  ExternalLink,
+  Github,
+  ShoppingCart,
+  Droplets,
+  Brain,
+  Briefcase,
+  BookOpen,
+} from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Blood Donation Stats Tracker',
-      description: 'A comprehensive web application for tracking blood donation statistics, managing donor information, and organizing donation drives with real-time analytics.',
+      description:
+        'A comprehensive web application for tracking blood donation statistics, managing donor information, and organizing donation drives with real-time analytics.',
       icon: Droplets,
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js'],
-      demoLink: '#',
-      githubLink: '#',
-      gradient: 'from-red-500 to-pink-600'
+      demoLink: 'https://blood-donation-git-main-venus-projects-54ba1281.vercel.app/',
+      githubLink: 'https://github.com/Sudheer-18/BloodDonation',
+      gradient: 'from-red-500 to-pink-600',
     },
     {
       title: 'E-Commerce Website',
-      description: 'Full-featured e-commerce platform with user authentication, product catalog, shopping cart, payment integration, and admin dashboard.',
+      description:
+        'Full-featured e-commerce platform with user authentication, product catalog, shopping cart, payment integration, and admin dashboard.',
       icon: ShoppingCart,
       tech: ['Next.js', 'React', 'Stripe', 'Tailwind CSS'],
       demoLink: '#',
       githubLink: '#',
-      gradient: 'from-blue-500 to-cyan-600'
+      gradient: 'from-blue-500 to-cyan-600',
     },
     {
       title: 'Memory Game',
-      description: 'Interactive memory game built with vanilla JavaScript featuring different difficulty levels, scoring system, and responsive design.',
+      description:
+        'Interactive memory game built with vanilla JavaScript featuring different difficulty levels, scoring system, and responsive design.',
       icon: Brain,
+      tech: ['React', 'LocalStorage'],
+      demoLink: 'https://memory-game-nu-self.vercel.app/',
+      githubLink: 'https://github.com/Sudheer-18/MemoryGame',
+      gradient: 'from-purple-500 to-indigo-600',
+    },
+    {
+      title: 'Job Navigator',
+      description:
+        'Job Navigator is a web-based project that displays a list of job roles across various domains. It provides detailed descriptions to help students understand each role’s responsibilities and required skills.',
+      icon: Briefcase,
       tech: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
+      demoLink: 'https://job-navigator-navy.vercel.app/',
+      githubLink: 'https://github.com/Sudheer-18/JobNavigator',
+      gradient: 'from-green-500 to-emerald-600',
+    },
+    {
+      title: 'Student Analysis',
+      description:
+        'This app shows analysis of a student, including resume ATS scoring and MCQ tests on selected topics for improvement.',
+      icon: BookOpen,
+      tech: ['ReactNative', 'Nodejs', 'JavaScript'],
       demoLink: '#',
       githubLink: '#',
-      gradient: 'from-purple-500 to-indigo-600'
-    }
+      gradient: 'from-yellow-500 to-orange-500',
+    },
   ];
 
+
+
+  
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,10 +97,14 @@ const Projects: React.FC = () => {
               whileHover={{ y: -10 }}
               className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-              
+              <div
+                className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+              ></div>
+
               <div className="p-8">
-                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${project.gradient} text-white mb-6`}>
+                <div
+                  className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${project.gradient} text-white mb-6`}
+                >
                   <project.icon size={24} />
                 </div>
 
@@ -92,6 +130,8 @@ const Projects: React.FC = () => {
                 <div className="flex space-x-4">
                   <motion.a
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300"
@@ -102,6 +142,8 @@ const Projects: React.FC = () => {
 
                   <motion.a
                     href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center space-x-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300"
