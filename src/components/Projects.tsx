@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
         'This app shows analysis of a student, including resume ATS scoring and MCQ tests on selected topics for improvement.',
       icon: BookOpen,
       tech: ['ReactNative', 'Nodejs', 'JavaScript'],
-      demoLink: '#',
+      demoLink: './ProjectAPPPage',
       githubLink: '#',
       gradient: 'from-yellow-500 to-orange-500',
     },
