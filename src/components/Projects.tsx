@@ -22,6 +22,16 @@ const Projects: React.FC = () => {
       githubLink: 'https://github.com/Sudheer-18/BloodDonation',
       gradient: 'from-red-500 to-pink-600',
     },
+     {
+      title: 'Student Analysis',
+      description:
+        'This app and website shows analysis of a student, including resume ATS scoring and MCQ tests on selected topics for improvement.',
+      icon: BookOpen,
+      tech: ['ReactNative', 'Nodejs', 'JavaScript'],
+      demoLink: 'https://student-placement-analysis.vercel.app/',
+      githubLink: 'https://github.com/Sudheer-18/StudentPlacementAnalysis',
+      gradient: 'from-yellow-500 to-orange-500'
+    },
     {
       title: 'E-Commerce Website',
       description:
@@ -51,16 +61,6 @@ const Projects: React.FC = () => {
       demoLink: 'https://job-navigator-navy.vercel.app/',
       githubLink: 'https://github.com/Sudheer-18/JobNavigator',
       gradient: 'from-green-500 to-emerald-600',
-    },
-    {
-      title: 'Student Analysis',
-      description:
-        'This app shows analysis of a student, including resume ATS scoring and MCQ tests on selected topics for improvement.',
-      icon: BookOpen,
-      tech: ['ReactNative', 'Nodejs', 'JavaScript'],
-      demoLink: '#',
-      githubLink: '#',
-      gradient: 'from-yellow-500 to-orange-500',
     },
   ];
 
