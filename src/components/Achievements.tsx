@@ -105,7 +105,7 @@ const Achievements: React.FC = () => {
           <h3 className="text-2xl font-bold text-center mb-8">Quick Stats</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">400+</div>
+              <div className="text-3xl font-bold mb-2">500+</div>
               <div className="text-blue-100">LeetCode Problems</div>
             </div>
             <div className="text-center">
