@@ -48,6 +48,7 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'Node.js', icon: Server },
         { name: 'Express.js', icon: Server },
+        { name: 'Spring boot', icon: Server },
         { name: 'REST APIs', icon: Zap },
         { name: 'JWT', icon: Settings },
         { name: 'OAuth', icon: Settings }
