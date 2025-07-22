@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
       title : "coding assesment",
       description: 'project about mainly to detect the plagrisum .for detecting plagrisum we created the coding assesment',
       icon : Code,
-      tech : ['Nextjs,java,springboot'],
+      tech : ['Nextjs','java','springboot'],
       demoLink : 'https://plagarism-check.vercel.app/',
       githubLink : 'https://github.com/Sudheer-18/Plagarism-Check',
       gradient: 'from-purple-500 to-indigo-600',
