@@ -9,6 +9,7 @@ import {
   Briefcase,
   BookOpen,
 } from 'lucide-react';
+import { Code } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -62,6 +63,15 @@ const Projects: React.FC = () => {
       githubLink: 'https://github.com/Sudheer-18/JobNavigator',
       gradient: 'from-green-500 to-emerald-600',
     },
+    {
+      title : "coding assesment",
+      description: 'project about mainly to detect the plagrisum .for detecting plagrisum we created the coding assesment',
+      icon : Code,
+      tech : ['Nextjs,java,springboot'],
+      demoLink : 'https://plagarism-check.vercel.app/',
+      githubLink : 'https://github.com/Sudheer-18/Plagarism-Check',
+      gradient: 'from-purple-500 to-indigo-600',
+    }
   ];
 
 
