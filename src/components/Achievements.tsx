@@ -88,13 +88,11 @@ const Achievements: React.FC = () => {
                 </div>
               </div>
 
-              {/* Decorative border */}
               <div className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
             </motion.div>
           ))}
         </div>
 
-        {/* Stats Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

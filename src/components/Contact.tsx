@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, ExternalLink, Code2 } from 'lucide-react';
-
+import Axios from 'axios';
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
-    // Reset form
+    // let data = Axios.post(`http://localhost:8000/sendmsg`, formData);
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'sudheer13ks@gmail.com',
+      value: 'kosireddysudheer803@gmail.com',
       href: 'mailto:sudheer13ks@gmail.com',
       color: 'from-blue-500 to-cyan-600'
     },
